@@ -8,21 +8,6 @@ import { loadExternalResource } from '@/lib/utils'
  * @returns
  */
 const MOUSE_FOLLOW = () => {
-  const type = siteConfig('MOUSE_FOLLOW_EFFECT_TYPE')
-  const color = siteConfig('MOUSE_FOLLOW_EFFECT_COLOR')
-
-  useEffect(() => {
-    loadExternalResource('/js/mouse-follow.js', 'js').then(url => {
-      window.createMouseCanvas && window.createMouseCanvas()({ type, color })
-    })
-
-    return () => {
-      // 在组件卸载时清理资源
-      const mouseFollowElement = document.getElementById('vixcityCanvas')
-      mouseFollowElement?.parentNode?.removeChild(mouseFollowElement)
-    }
-  }, [])
-
   return (
     <>
     </>

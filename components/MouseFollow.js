@@ -25,15 +25,6 @@ const MOUSE_FOLLOW = () => {
 
   return (
     <>
-      <style global jsx>
-        {`
-          @media (max-width: 600px) {
-            #vixcityCanvas {
-              display: none;
-            }
-          }
-        `}
-      </style>
     </>
   )
 }

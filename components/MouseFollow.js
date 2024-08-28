@@ -8,9 +8,6 @@ import { loadExternalResource } from '@/lib/utils'
  * @returns
  */
 const MOUSE_FOLLOW = () => {
-  return (
-    <>
-    </>
-  )
+  return null
 }
 export default MOUSE_FOLLOW
